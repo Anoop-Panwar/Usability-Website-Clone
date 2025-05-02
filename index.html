@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media queries.css">
     <link rel="shortcut icon" type="image/x-icon" href="assets/asset 42.png">
     <title>first website</title>
 </head>
@@ -23,8 +24,8 @@
                 <div class="tester">Become a tester</div>
             </a>
 
-            <div class="nav-link">
-                <ul>
+            <div class="nav-link" id="nav-link">
+                <ul class="flex">
                     <li><a href="#" class="hover-link">Product</a></li>
                     <li><a href="#" class="hover-link">Customers</a></li>
                     <li><a href="#" class="hover-link">Pricing</a></li>
@@ -33,6 +34,9 @@
                     <li><a href="#" class="primary-btn">Sign up</a></li>
                 </ul>
             </div>
+            <a href="#" class="nav-toggle hover-link" id="nav-toggle">
+                <img src="./assets/asset 43.png" width="15px" height="15px">
+            </a>
         </div>  
     </nav>
 
@@ -167,7 +171,7 @@
             </div>
 
             <!-- Marketers -->
-            <div class="big-feature flex">
+            <div class="big-feature flex" id="marketers">
                 <div class="big-feature-text flex">
                     <h4>Optimisation for</h4>
                     <h2>Marketers</h2>
@@ -350,5 +354,15 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        const toggleButton = document.getElementById('nav-toggle');
+        const navLinks = document.getElementById('nav-link');
+
+        toggleButton.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+            }
+        )
+    </script>
 </body>
 </html>

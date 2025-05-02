@@ -50,7 +50,8 @@ p{
 .container{
     max-width: 1250px;
     margin-inline: auto;
-    
+    overflow: hidden;
+    padding: 0px 15px 0px 15px;
 }
 
 a{
@@ -67,6 +68,7 @@ a{
     display: inline-block;
     background-color: #2294ed;
     color: white;
+    text-align: center;
     border-radius: 4px;
     padding: 10px 24px;
     font-weight: 600;
@@ -111,6 +113,7 @@ a{
 
 }
 
+/* nav bar */
 .main-nav{
     padding: 30px;
     display: flex;
@@ -144,12 +147,25 @@ ul{
 
 }
 
+.nav-toggle{
+    display: none;
+    align-items: center;
+    
+
+}
+
 /* header */
 
 .header-section{
     justify-content: center;
     align-items: center;
     gap: 50px;
+    
+}
+
+.header-left {
+    width: 38vw;
+
 }
 
 .header-left h1{
@@ -157,13 +173,12 @@ ul{
     font-weight: 600;
 }
 
-.header-left {
-    max-width: 38vw;
-
+.header-left a{
+    margin-top: 10px;
 }
 
 .header-right img{
-    width: 600px;
+    width: 100%;
     
 }
 
@@ -176,15 +191,15 @@ ul{
 }
 
 .logos{
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-wrap: wrap;
     gap: 20px;
     
 }
 /* feature */
 .feature-section{
-    margin: 40px;
-    padding: 60px;
+    margin-block: 40px;
+    padding-block: 60px;
     background-image: url(./assets/asset\ 34.svg);
     background-repeat: no-repeat;
     background-position: center;
@@ -198,16 +213,17 @@ ul{
 }
 
 .feature-area{
-    justify-content: center;
+    justify-content: space-evenly;
     flex-wrap: wrap;
     gap: 30px 20px;
 }
+
 .feature-card{
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 20px;
-    width: 350px;
+    width: 30%;
     
 }
 
@@ -226,7 +242,12 @@ ul{
 
 .big-feature-img img{
     width: 100%;
+    
 
+}
+
+.big-feature-img{
+    margin: auto;
 }
 
 .big-feature-text{
@@ -248,7 +269,7 @@ ul{
 
 /* examples */
 .examples{
-    margin: 110px;
+    margin-block: 110px;
 
 }
 
@@ -266,7 +287,7 @@ ul{
     justify-content: center;
     gap: 30px;
     margin-top: 20px;
-
+    flex-wrap: wrap;
 }
 
 .card{
@@ -329,7 +350,7 @@ ul{
     flex-direction: column;
     align-items: center;
     gap: 40px;
-
+    text-align: center;
 }
 
 /* footer */
